@@ -54,11 +54,19 @@ padding-left: 10vw;
 .section{
     height: 100vh;
 }
-.me{
+.section > div{
     height: 50%;
+}
+.me{
+    height: auto;
 }
 img{
     border-radius: 20%;
 width: 200px;
 height: 200px;
+}
+.imgilu{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
 }
