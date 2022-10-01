@@ -52,7 +52,7 @@ padding-left: 10vw;
 .sections{
 }
 .section{
-    height: 100vh;
+    height: auto;
 }
 
 .mepresentation{
