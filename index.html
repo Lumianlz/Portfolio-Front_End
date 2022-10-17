@@ -45,129 +45,172 @@
                 </div>
             </div>
             <div class="acerca_de row mt-xl-1">
-                <div class="col-12 ">
+                <div class="col-11 ">
                     <div class="acerca pt-3">
-                        <h2 class="bg-dark rounded-2 d-inline-block p-1 ">Hey! Hola, soy Luciano</h2>
-                        <p><strong>Acerca De Mi</strong>: <br>
-                        Mi nombre es Lopez Luciano Damian. <br>
-                        estudio programacion web full stack en Argentina Programa.
-                        </p>
+                        <h2 class="bg-dark rounded-2 d-inline-block p-1 ">Acerca de mi:</h2>
+                        <div class="content" id="content">
+                            <p>Mi nombre es 
+                                <strong id="name_title">Lopez Luciano Damian</strong>
+                            </p>
+                           <p id="text_acerca"> Estudio programacion web</p>
+                        </div>
+                        <div class="input">
+                            <form action="">
+                                <label for="name">Escribe tu nombre</label><br>
+                                <textarea name="title" type="text" id="name" value="" style="height: 20px;"></textarea><br>
+                                <label for="message">Escribe aqui lo que quiera mostrar acerca de ti:</label><br>
+                                <textarea name="message" type="text" id="text_edit" value="hola" style="width: 70%;height: 50px;"></textarea>
+                                <input type="button"  style="width: 80px;" id="button_edit" value="Editar" onclick="editar('name','text_edit','name_title','text_acerca')">
+                            </form>
+                        </div>
                     </div>
+                </div>
+                <div class="edit col-1">
+                    <svg class="item_edit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        style="fill: rgba(255, 255, 255, 1);">
+                        <path
+                            d="m7 17.013 4.413-.015 9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583-1.597 1.582-1.586-1.585 1.594-1.58zM9 13.417l6.03-5.973 1.586 1.586-6.029 5.971L9 15.006v-1.589z">
+                        </path>
+                        <path
+                            d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z">
+                        </path>
+                    </svg>
                 </div>
             </div>
         </div>
         <!-- secciones------------------------------------------------ -->
         <div class="section experiencias container-fluid">
-            <h2><strong>Experiencias Laborales</strong></h2>
-            <p>Debido  a que aun no poseo experiencias laborales pertenecientes al rubro utiizare este espacio para explicaciones sobre o trabajado en la pag.
-
-            </p>
-            <div class="item_exp row">
-                <div class="col-1 col-sm-1"></div>
-                <div class="col-1 col-sm-11">
-                    <h3>HTML</h3>
-                    <p> la pagina fue creada a partir de una estructura basada en e sistema de grilas de bootstrap creano filas y columnas para organizar el contenido <br>
-                    Se dispuso de una serie de etiquetas "div" con clases identificadas como:</p>
-                    <ul>
-                        <li>Header</li>
-                        <li>Nav</li>
-                        <li>Section</li>
-                        <li>Footer (aun no creado)</li>
-                    </ul>
+            <h2 class="fix_title"><strong>Experiencias Laborales</strong></h3>
+        
+                <div id="sectionForNewsExp">
+                    <div class="item_exp container-fluid">
+                        <div class="title_exp row">
+                            <h3></h3>
+                        </div>
+                        <div class="content_exp row">
+                            <div class="logo_exp col-1">
+                                <img src="" alt="LogoDeExperiencia">
+                            </div>
+                            <div class="text_exp col-11">
+                                <p>la exp</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="item_exp row">
-                <div class="col-1 col-sm-1"></div>
-                <div class="col-1 col-sm-11">
-                    <h3>CSS</h3>
-                    <p> Los estilos de la pagina fueron creados en parte con bootstrap (sistema de grillas y algunos elementos extra como botones) y el resto escrito y aplicado manualmente desde una hoja de estilo.</p>
+        
+        </div>
+                <!-- input para sections------------------------------------------------- el formulario debe crear nuevas filas con todos sus componentes -->
+                <div class="input"> 
+                    <form action="">
+                        <label for="name">Escribe tu nombre</label><br>
+                        <textarea name="title" type="text" id="input_title_exp" value="" style="height: 20px;"></textarea><br>
+                        <label for="message">Escribe aqui lo que quiera mostrar acerca de ti:</label><br>
+                        <textarea name="message" type="text" id="input_text_exp" value="hola" style="width: 70%;height: 50px;"></textarea>
+                        <input type="button"  style="width: 80px;" id="button_edit" value="Editar" onclick="editar(input_title_exp,input_text_exp,titulo,texto)">
+                    </form>
                 </div>
-            </div>
-            <div class="item_exp row">
-                <div class="col-1 col-sm-1"></div>
-                <div class="col-1 col-sm-11">
-                    <h3>experiencia</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste necessitatibus, consequuntur
-                        iusto eos, animi sunt illo amet tempora rem expedita, error eveniet veniam! Soluta animi rem
-                        accusamus deleniti aliquam?</p>
-                </div>
-            </div>
         </div>
         <div class="section educacion container-fluid">
-            <h3>Formacion Academica</h3>
+            <h2 class="fix_title">Formacion Academica</h2>
             <div class="item_edu row">
                 <div class="col-1 col-sm-1"></div>
-                <div class="col-1 col-sm-11">
+                <div class="col-10 col-sm-10">
                     <h3>Educacion</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste necessitatibus, consequuntur
                         iusto eos, animi sunt illo amet tempora rem expedita, error eveniet veniam! Soluta animi rem
                         accusamus deleniti aliquam?</p>
                 </div>
+                <div class="edit col-1">
+                    <svg class="item_edit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        style="fill: rgba(255, 255, 255, 1);">
+                        <path
+                            d="m7 17.013 4.413-.015 9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583-1.597 1.582-1.586-1.585 1.594-1.58zM9 13.417l6.03-5.973 1.586 1.586-6.029 5.971L9 15.006v-1.589z">
+                        </path>
+                        <path
+                            d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="input">
+                <form action="">
+                    <label for="Titulo">Titulo de tu formacion:</label><br>
+                    <input type="text" name="Titulo" id=""><br>
+                    <label for="message">Escribe aqui una descripcion de tu experiencia:</label><br>
+                    <textarea  name="message" 
+                    style="width: 80%; height: 150px;"></textarea>
+                    <button class="btn btn-light" onclick="" > Editar</button>
+                </form>
             </div>
         </div>
         <div class="section skills container-fluid">
             <div class="row_skill row">
-                <div class="col-1 col-sm-4">
+                <div class="col_skill col-4 col-sm-4">
                     <div class="item_skill"></div>
                 </div>
-                <div class="col-1 col-sm-4">
+                <div class="col_skill col-4 col-sm-4">
                     <div class="item_skill"></div>
                 </div>
-                <div class="col-1 col-sm-4">
-                    <div class="item_skill"></div>
-                </div>
-            </div>
-            <div class="row_skill row">
-                <div class="col-1 col-sm-4">
-                    <div class="item_skill"></div>
-                </div>
-                <div class="col-1 col-sm-4">
-                    <div class="item_skill"></div>
-                </div>
-                <div class="col-1 col-sm-4">
+                <div class="col_skill col-4 col-sm-4">
                     <div class="item_skill"></div>
                 </div>
             </div>
             <div class="row_skill row">
-                <div class="col-1 col-sm-4">
+                <div class="col_skill col-4 col-sm-4">
                     <div class="item_skill"></div>
                 </div>
-                <div class="col-1 col-sm-4">
+                <div class="col_skill col-4 col-sm-4">
                     <div class="item_skill"></div>
                 </div>
-                <div class="col-1 col-sm-4">
+                <div class="col_skill col-4 col-sm-4">
                     <div class="item_skill"></div>
                 </div>
             </div>
+            <div class="row_skill row">
+                <div class="col_skill col-4 col-sm-4">
+                    <div class="item_skill"></div>
+                </div>
+                <div class="col_skill col-4 col-sm-4">
+                    <div class="item_skill"></div>
+                </div>
+                <div class="col_skill col-4 col-sm-4">
+                    <div class="item_skill"></div>
+                </div>
+            </div>
+
         </div>
         <div class="section proyects container-fluid">
-            <h3>Proyectos</h3>
+            <h2 class="fix_title">Proyectos</h2>
             <div class="item_proyects row">
-                <div class="col-1 col-sm-2"></div>
-                <div class="col-1 col-sm-10">
+                <div class="col-1 col-sm-1"></div>
+                <div class="col-10 col-sm-10">
                     <h3>Proyectos</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere exercitationem nam pariatur
                         tenetur tempora doloremque rem nobis voluptatem sed asperiores. Iure accusamus quo sit veniam
                         libero laudantium dolores sint deleniti.</p>
                 </div>
+                <div class="edit col-1">
+                    <svg class="item_edit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        style="fill: rgba(255, 255, 255, 1);">
+                        <path
+                            d="m7 17.013 4.413-.015 9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583-1.597 1.582-1.586-1.585 1.594-1.58zM9 13.417l6.03-5.973 1.586 1.586-6.029 5.971L9 15.006v-1.589z">
+                        </path>
+                        <path
+                            d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z">
+                        </path>
+                    </svg>
+                </div>
+
             </div>
-            <div class="item_proyects row">
-                <div class="col-1 col-sm-2"></div>
-                <div class="col-1 col-sm-10">
-                    <h3>Proyectos</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere exercitationem nam pariatur
-                        tenetur tempora doloremque rem nobis voluptatem sed asperiores. Iure accusamus quo sit veniam
-                        libero laudantium dolores sint deleniti.</p>
-                </div>
-            </div>
-            <div class="item_proyects row">
-                <div class="col-1 col-sm-2"></div>
-                <div class="col-1 col-sm-10">
-                    <h3>Proyectos</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere exercitationem nam pariatur
-                        tenetur tempora doloremque rem nobis voluptatem sed asperiores. Iure accusamus quo sit veniam
-                        libero laudantium dolores sint deleniti.</p>
-                </div>
+            <div class="input">
+                <form action="">
+                    <label for="Titulo">Titulo de tu proyecto:</label><br>
+                    <input type="text" name="Titulo" id=""><br>
+                    <label for="message">Escribe aqui una descripcion de tu experiencia:</label><br>
+                    <textarea  name="message" 
+                    style="width: 80%; height: 150px;"></textarea>
+                    <button class="btn btn-light" onclick="" > Editar</button>
+                </form>
             </div>
         </div>
 
@@ -176,10 +219,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script>
-            <!-- script propio -->
-            <script src="/script/script.js"></script>
-            <!-- script de ts -->
-            <script src="/output/typescript.js"></script>
+        <!-- script propio -->
+        <script src="/script/script.js"></script>
+        <!-- script de ts -->
+        <script src="/output/typescript.js"></script>
 </body>
 
 </html>
