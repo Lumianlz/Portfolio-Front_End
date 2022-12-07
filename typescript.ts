@@ -45,12 +45,6 @@ function editar(titulo_input:string,texto_input:string,titulo:string,texto:strin
             texto=texto;
             logo=logo;
         }
-       /**
-        * eliminar
-        */
-       public eliminar() {
-        
-       }
       /**
        * editar
        */
@@ -58,4 +52,10 @@ function editar(titulo_input:string,texto_input:string,titulo:string,texto:strin
       }
     }
 //    instancias de items---------------------------------------------
- let titulo=document.getElementById("") 
+ let titulo=document.getElementById("") ;
+ function crear (nombre:string):void{
+    let input:any=document.getElementById(nombre);
+    input.style.setProperty("display","inline-block")
+    console.log(input)
+ }
+
